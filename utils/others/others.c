@@ -36,16 +36,13 @@ HYD_status HYDU_add_to_node_list(const char *hostname, int num_procs, struct HYD
     else {
         for (node = *node_list; node->next; node = node->next);
 
-        if (strcmp(node->hostname, hostname)) {
-            /* If the hostname does not match, create a new node */
-            status = HYDU_alloc_node(&node->next);
-            HYDU_ERR_POP(status, "unable to allocate node\n");
+        status = HYDU_alloc_node(&node->next);
+        HYDU_ERR_POP(status, "unable to allocate node\n");
 
-            node->next->node_id = node->node_id + 1;
+        node->next->node_id = node->node_id + 1;
 
-            node = node->next;
-            node->hostname = HYDU_strdup(hostname);
-        }
+        node = node->next;
+        node->hostname = HYDU_strdup(hostname);
 
         node->core_count += num_procs;
     }
