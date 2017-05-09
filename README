@@ -1,3 +1,4 @@
+extracted from mvapich2-2.2
 
 Hydra is a process management system for starting parallel jobs. Hydra
 is designed to natively work with existing launcher daemons (such as
