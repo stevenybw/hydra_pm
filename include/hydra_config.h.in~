@@ -753,8 +753,7 @@
 /* Hydra version information */
 #undef HYDRA_VERSION
 
-/* Define to the sub-directory in which libtool stores uninstalled libraries.
-   */
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
 #undef LT_OBJDIR
 
 /* Define if environ decl needed */
@@ -777,9 +776,6 @@
 
 /* Define if strsignal needs a declaration */
 #undef NEEDS_STRSIGNAL_DECL
-
-/* Define to 1 if your C compiler doesn't accept -c and -o together. */
-#undef NO_MINUS_C_MINUS_O
 
 /* Name of package */
 #undef PACKAGE

@@ -97,8 +97,7 @@
 /* defined if the C compiler supports __typeof(variable) */
 #undef HAVE___TYPEOF
 
-/* Define to the sub-directory in which libtool stores uninstalled libraries.
-   */
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
 #undef LT_OBJDIR
 
 /* Define if putenv needs a declaration */
@@ -112,9 +111,6 @@
 
 /* Define if strncmp needs a declaration */
 #undef NEEDS_STRNCMP_DECL
-
-/* Define to 1 if your C compiler doesn't accept -c and -o together. */
-#undef NO_MINUS_C_MINUS_O
 
 /* Name of package */
 #undef PACKAGE
