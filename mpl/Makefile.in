@@ -419,7 +419,7 @@ am__DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/localdefs.in \
 	$(top_srcdir)/include/config.h.in confdb/ar-lib confdb/compile \
 	confdb/config.guess confdb/config.rpath confdb/config.sub \
 	confdb/depcomp confdb/install-sh confdb/ltmain.sh \
-	confdb/missing
+	confdb/missing ltmain.sh
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 distdir = $(PACKAGE)-$(VERSION)
 top_distdir = $(distdir)
